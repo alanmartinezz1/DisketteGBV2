@@ -3,6 +3,7 @@
     --red: #2A337A;
     --gray: rgb(48, 46, 46);
     --white:white;
+    --barraavance: 50%;
 }
 
 *{
@@ -206,7 +207,7 @@ span{
     border-style: solid;
     border-color:#4E537A;
     border-radius: 10px;
-    height: 35%;
+    height: 25%;
     margin-bottom: 3%;
     margin-left: 7px;
 }
@@ -220,8 +221,77 @@ span{
     border-style: solid;
     border-color:#4E537A;
     border-radius: 10px;
-    height: 60.5%;
+    height: 70.5%;
     margin-left: 7px;
+}
+
+/*actividades*/
+
+.sec .contenido .bnpr .progresos .act{
+    padding: 15px;
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-color:#4E537A;
+    border-radius: 10px;
+    height: 70%;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+/*cuadros de progreso*/
+
+.sec .contenido .bnpr .progresos .act .cuadros{
+    margin: 5px;
+    padding: 18px;
+    background-color: #9faafa5d;
+    border-width: 2px;
+    border-style: solid;
+    border-color:#5569FB;
+    border-radius: 6px;
+    width: 97%;
+    height: 20%;
+    margin-bottom: 10px;
+}
+
+.sec .contenido .bnpr .progresos .act .cuadros p{
+    color: black;
+}
+
+/*barra de progreso*/
+
+.barraestafa,
+.barraestafa::after{
+    position: relative;
+    left: 63%;
+    bottom: 55%;
+    transform: translateX(-63%) translateY(-55%);
+    width: 700px;
+    height: 15px;
+    background-color: var(--white);
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.barraestafa::after{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    background-color: #49995a;
+    transition: var(--boton);
+    border-radius: 80px;
+    left: -700px;
+    animation: barraaa 1s ease-in-out forwards;
+}
+
+.barraestafa2::after{
+    --barraavance:50%
+}
+
+@keyframes barraaa{
+    to{
+        transform: translateX(var(--barraavance));
+    }
 }
 
 /*Responsive*/
