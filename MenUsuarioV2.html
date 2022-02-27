@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d18743e159.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./img/diskettelogo.jpg">
     <title>Inicio</title>
@@ -38,18 +39,81 @@
     </header>
 
     <main>
-        <section class="bnda">
-            <div class="descripcionm">
-                <h2>¡Bienvenido, Usuario!</h2>
-                <p>En la parte superior derecha encontrarás los apartados para iniciar tu viaje</p>
-                <p>al conocimiento. En la sección "Perfil" podrás visualizar tus avances; mientras</p>
-                <p>que en "Actividades" una lista de tareas de diferentes temas acerca del internet.</p>
+        <section class="sec" id="menu">
+
+            <div class="contenido">
+
+                <div class="perfil">
+
+                    <div class="foto">
+
+                        <img class="imgfoto" src="./IMG/undraw_personal_info_re_ur1n.svg">
+                        
+                    </div>
+
+                    <div class="info">
+
+                        <div class="email">
+                            <h2>Correo electrónico:</h2>
+                            <p>alanmzg69@gmail.com</p>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="password">
+                            <h2>Contraseña:</h2>
+                            <div class="inputpass">
+                                <input type="password" id="password" placeholder="Password">
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="phone">
+                            <h2>Número de teléfono:</h2>
+                            <p>5578952487</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bnpr">
+
+                    <div class="bienvenida">
+
+                    </div>
+
+                    <div class="progresos">
+                        
+                    </div>
+
+                </div>
+
             </div>
-            <div class="imgbnda">
-                <img src="./IMG/undraw_unexpected_friends_tg-6-k.svg" alt="">
-            </div>
+
         </section>
+
     </main>
     <script src="./JS/header.js"></script>
+    <script>
+        var state = false;
+        function toggle(){
+            if(state){
+                document.getElementById("password").setAttribute("type","password");
+                document.getElementById("eye").style.color= '#7a797e';
+                state = false;
+            }else{
+                document.getElementById("password").setAttribute("type","text");
+                document.getElementById("eye").style.color= '#5887ef';
+                state = true;
+            }
+        }
+    </script>
 </body>
 </html>
