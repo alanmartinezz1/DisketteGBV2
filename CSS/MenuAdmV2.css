@@ -472,10 +472,54 @@ footer{
         width: 560px;
     }
 
+    
+/*barras*/
+/*general*/
+.barraestafa,
+.barraestafa::after{
+    position: relative;
+    bottom: 30%;
+    transform: translateY(30%);
+    width: 400px;
+    height: 25px;
+    background-color: var(--blanco);
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.barraestafa::after{
+    content: "";
+    position: absolute;
+
+    background-color: #49995a;
+    transition: var(--boton);
+    border-radius: 80px;
+    left: -400px;
+    top: 0px;
+    animation: barraaa .5s ease-in-out forwards;
+}
+
+.barraestafa2::after{
+    --barraavance:50%
+}
+
 
 }
 
 @media screen and (max-width: 720px){
+
+    /*responsive del header*/
+
+    .menu .icono-cabeza h1 a{
+        font-size: 25px;
+        -webkit-text-stroke: 1px #2A337A;
+    }
+
+    .menu .list-container .lists li a{
+        margin: 0px 5px;
+        padding: 3px;
+        font-size: 8px;
+    }
 
     .progresos h2{
         font-size: 20px;
@@ -490,7 +534,38 @@ footer{
     }
 
     .accordion{
-        width: 380px;
+        width: 300px;
     }
+
+    
+/*barras*/
+/*general*/
+.barraestafa,
+.barraestafa::after{
+    position: relative;
+    bottom: 30%;
+    transform: translateY(30%);
+    width: 180px;
+    height: 25px;
+    background-color: var(--blanco);
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.barraestafa::after{
+    content: "";
+    position: absolute;
+
+    background-color: #49995a;
+    transition: var(--boton);
+    border-radius: 80px;
+    left: -180px;
+    top: 0px;
+    animation: barraaa .5s ease-in-out forwards;
+}
+
+.barraestafa2::after{
+    --barraavance:50%
+}
 
 }
