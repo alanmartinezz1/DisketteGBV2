@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/MenuAdmV2.css">
+    <link rel="shortcut icon" href="./img/diskettelogo.jpg">
+    <title>Usuarios</title>
+</head>
+<body>
+    <header id="header">
+
+        <nav class="menu">
+
+            <div class="icono-cabeza">
+                <h1><a href="MenuAdmV2.html">DisketteGb</a></h1>
+            </div>
+
+            <div class="list-container">
+                <ul class="lists">
+                    <li><a href="MenuAdmV2.html" class="activo">Usuarios</a></li>
+                    <li><a href="MenuAdm2V2.html">Actividades</a></li>
+                    <li><a href="index.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="sec" id="menu">
+
+            <div class="contenido">
+
+                <div class="progresos">
+                    <h2>Progreso de Usuarios</h2>
+                </div>               
+
+                <br>
+                
+                <div class="usuarios">
+                    <div class="accordion">
+                        
+                        <div class="accordion-item">
+
+                            <button class="accordion-header">
+                              <strong class="estafasact">Usuario 1</strong><strong class="estafasact">Progreso Total</strong> 
+                              <div class="barraestafa barraestafa2"> </div>
+                            </button>
+
+                            <div class="accordion-body">
+
+                              <div class="tituloact">
+                                  <strong class="phishing">Phishing</strong>
+                              </div>
+
+                              <div class="progresosusu">
+                                  <br>
+                                  <p class="PF">Progreso Fácil</p> <div class="barraestafa3 barraestafa4"> </div>
+                                  <br>
+                                  <p class="PD">Progreso Difícil</p> <div class="barraestafa5 barraestafa6"> </div>
+                              </div>
+
+                              <br>
+
+                              <div class="tituloact">
+                                  <strong class="spam">Spam</strong>
+                              </div>
+
+                              <div class="progresousu">
+                                <br>
+                                <p class="PF">Progreso Fácil</p> <div class="barraestafa3 barraestafa4"> </div>
+                                <br>
+                                <p class="PD">Progreso Difícil</p> <div class="barraestafa5 barraestafa6"> </div>
+                                  
+
+                              </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-item">
+
+                            <button class="accordion-header">
+                              <strong class="estafasact">Usuario 2</strong><strong class="estafasact">Progreso Total</strong> 
+                              <div class="barraestafa barraestafa2"> </div>
+                            </button>
+
+                            <div class="accordion-body">
+
+                              <div class="tituloact">
+                                  <strong class="phishing">Phishing</strong>
+                              </div>
+
+                              <div class="progresosusu">
+                                  <br>
+                                  <p class="PF">Progreso Fácil</p> <div class="barraestafa3 barraestafa4"> </div>
+                                  <br>
+                                  <p class="PD">Progreso Difícil</p> <div class="barraestafa5 barraestafa6"> </div>
+                              </div>
+
+                              <br>
+
+                              <div class="tituloact">
+                                  <strong class="spam">Spam</strong>
+                              </div>
+
+                              <div class="progresousu">
+                                <br>
+                                <p class="PF">Progreso Fácil</p> <div class="barraestafa3 barraestafa4"> </div>
+                                <br>
+                                <p class="PD">Progreso Difícil</p> <div class="barraestafa5 barraestafa6"> </div>
+                                  
+
+                              </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <script src="acordeon.js"></script>
+</body>
+</html>
