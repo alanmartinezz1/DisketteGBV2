@@ -441,3 +441,56 @@ footer{
 /*responsive act*/
 
 /*responsive usu*/
+
+@media (max-width: 1500px){
+
+    .sec .contenido{
+        width: 80%;
+    }
+
+    .accordion{
+        width: 900px;
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .progresos h2{
+        font-size: 27px;
+    }
+
+    .usuarios .accordion .accordion-header strong{
+        font-size: 17px;
+    }
+
+    .sec .contenido{
+        width: 85%;
+    }
+
+    .accordion{
+        width: 560px;
+    }
+
+
+}
+
+@media screen and (max-width: 720px){
+
+    .progresos h2{
+        font-size: 20px;
+    }
+
+    .usuarios .accordion .accordion-header strong{
+        font-size: 12px;
+    }
+
+    .contenido{
+        width: 90%;
+    }
+
+    .accordion{
+        width: 380px;
+    }
+
+}

@@ -394,3 +394,87 @@ footer{
 
 
 /*responsive*/
+
+@media (max-width: 1500px){
+    h2{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px){
+
+    h2{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .sec .contenido{
+        height: 75%;
+    }
+
+    .acts{
+        margin: 2px;
+        height: 80%;
+    }
+
+    .sec .contenido .estafas .phishing{
+        margin-top: 5px;
+    }
+
+    .btn-material{
+        height: 30px;
+        font-size: 12px;
+
+    }
+
+}
+
+@media screen and (max-width: 720px){
+
+    h2{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    .titulo{
+        height: 10%;
+    }
+
+    .phishing{
+        height: 45%;
+    }
+
+    .spam{
+        height: 45%;
+    }
+
+    .sec .contenido{
+        height: 90%;
+    }
+
+    .acts{
+        margin: 2px;
+        height: 85%;
+    }
+
+    .sec .contenido .estafas .phishing{
+        margin-top: 5px;
+    }
+
+    .btn-material{
+        height: 20px;
+        font-size: 8px;
+
+    }
+
+}

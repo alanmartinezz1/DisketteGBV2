@@ -438,6 +438,175 @@ footer{
 
 /*Responsive*/
 
+@media (max-width: 1500px){
+
+    .sec .contenido .perfil .info h2{
+        padding-top: 5px;
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    
+    .sec .contenido .perfil .info p{
+        padding-top: 2px;
+        font-size: 13px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    /*progresos*/
+
+    .sec .contenido .bnpr .progresos{
+        height: 500px;
+    }
+    
+    /*barra*/
+    .barraestafa,
+    .barraestafa::after{
+        left: 72%;
+        bottom: 62%;
+        transform: translateX(-68%) translateY(-60%);
+        width: 320px;
+        height: 12px;
+    }
+
+    .barraestafa::after{
+        bottom: -8%;
+        left: -93%;
+    }
+    .barraestafa2::after{
+        --barraavance:50%
+    }
+
+    span{
+        left: 90%;
+        top: 8px;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 992px){
+
+    /*responsive del header*/
+
+    .menu .icono-cabeza h1 a{
+        font-size: 35px;
+        -webkit-text-stroke: 1px #2A337A;
+    }
+
+    .menu .list-container .lists li a{
+        margin: 0px 5px;
+        padding: 3px;
+        font-size: 15px;
+    }
+
+    /*responsive del contenido*/
+
+    .sec .contenido{
+        top: 800px;
+        height: 1300px;
+        padding: 8px;
+        display: block;
+    }
+
+    .sec .contenido .perfil .foto{
+        padding: 16px;
+        height: 30%;
+        align-items: center;
+    }
+
+    .sec .contenido .perfil .foto .imgfoto{
+        width: 75%;
+    }
+
+    .sec .contenido .perfil .info{
+        padding: 15px;
+        margin-top: 0;
+    }
+
+        
+    .sec .contenido .perfil .info h2{
+        padding-top: 5px;
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    
+    .sec .contenido .perfil .info p{
+        padding-top: 2px;
+        font-size: 13px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .email{
+        margin-bottom: 1px;
+    }
+    
+    .password{
+        margin-bottom: 1px;
+    }
+
+    input{
+        font-size: 10px;
+        padding: 5px 5px;
+    }
+
+    span{
+        position: relative;
+        left: 170px;
+        top: 0px;
+        cursor: pointer;
+    }
+
+    .fa{
+        font-size: 7px;
+    }
+
+    /*progresos*/
+
+    .sec .contenido .bnpr .progresos{
+        height: 500px;
+    }
+    
+    /*barra*/
+    .barraestafa,
+    .barraestafa::after{
+        left: 72%;
+        bottom: 62%;
+        transform: translateX(-68%) translateY(-60%);
+        width: 170px;
+        height: 12px;
+    }
+
+    .barraestafa::after{
+        bottom: -8%;
+        left: -93%;
+    }
+    .barraestafa2::after{
+        --barraavance:50%
+    }
+
+
+    /*responsive del footer, checa la altura de .contenido alan*/
+
+    footer{
+        top: 1400px;
+    }
+
+}
+
 @media screen and (max-width: 720px){
 
     /*responsive del header*/
@@ -455,12 +624,9 @@ footer{
 
     /*responsive del contenido*/
 
-    .sec{
-        margin-top: 600px;
-    }
-
     .sec .contenido{
-        height: 101%;
+        top: 680px;
+        height: 1100px;
         padding: 8px;
         display: block;
     }
@@ -523,11 +689,37 @@ footer{
     .fa{
         font-size: 7px;
     }
+
+    /*progresos*/
+
+    .sec .contenido .bnpr .progresos{
+        height: 500px;
+    }
     
+    /*barra*/
+    .barraestafa,
+    .barraestafa::after{
+        left: 72%;
+        bottom: 62%;
+        transform: translateX(-68%) translateY(-60%);
+        width: 170px;
+        height: 12px;
+    }
+
+    .barraestafa::after{
+        bottom: -8%;
+        left: -93%;
+    }
+    .barraestafa2::after{
+        --barraavance:50%
+    }
+
+
     /*responsive del footer, checa la altura de .contenido alan*/
 
     footer{
-        top: 1300px;
+        top: 1200px;
     }
 
 }
+
