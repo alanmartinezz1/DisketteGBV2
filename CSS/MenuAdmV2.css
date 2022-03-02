@@ -108,9 +108,6 @@ body{
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
 }
 
-/*PÁGINA ACTIVIDADES*/
-
-
 /*PÁGINA USUARIOS*/
 
 .usuarios{
@@ -456,6 +453,23 @@ footer{
 
 @media (max-width: 992px){
 
+    .tituloact{
+        float: none;
+        margin: 5px;
+    }
+
+    .progresousu{
+        top: 20px;
+    }
+
+    .progresousu p{
+        font-size: 12px;
+    }
+
+    .tituloact strong{
+        font-size: 15px;
+    }
+
     .progresos h2{
         font-size: 27px;
     }
@@ -469,7 +483,7 @@ footer{
     }
 
     .accordion{
-        width: 560px;
+        width: 520px;
     }
 
     
@@ -480,7 +494,7 @@ footer{
     position: relative;
     bottom: 30%;
     transform: translateY(30%);
-    width: 400px;
+    width: 380px;
     height: 25px;
     background-color: var(--blanco);
     border-radius: 80px;
@@ -494,7 +508,7 @@ footer{
     background-color: #49995a;
     transition: var(--boton);
     border-radius: 80px;
-    left: -400px;
+    left: -380px;
     top: 0px;
     animation: barraaa .5s ease-in-out forwards;
 }
@@ -503,10 +517,95 @@ footer{
     --barraavance:50%
 }
 
+/*fácil*/
+
+.barraestafa3,
+.barraestafa3::after{
+    position: relative;
+    width: 300px;
+    height: 15px;
+    left: 70%;
+    bottom: 20px;
+    transform: translateX(-70%);
+    background-color: var(--blanco);
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.barraestafa3::after{
+    content: "";
+    position: absolute;
+
+    background-color: #49995a;
+    transition: var(--boton);
+    border-radius: 80px;
+    left: -300px;
+    top: 0px;
+    animation: barraaa 1s ease-in-out forwards;
+}
+
+.barraestafa4::after{
+    --barraavance:100%
+}
+
+/*difícil*/
+
+
+.barraestafa5,
+.barraestafa5::after{
+    position: relative;
+    width: 300px;
+    height: 15px;
+    left: 70%;
+    bottom: 20px;
+    transform: translateX(-70%);
+    background-color: var(--blanco);
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.barraestafa5::after{
+    content: "";
+    position: absolute;
+
+    background-color: #49995a;
+    transition: var(--boton);
+    border-radius: 80px;
+    left: -300px;
+    top: 0px;
+    animation: barraaa 1s ease-in-out forwards;
+}
+
+.barraestafa6::after{
+    --barraavance:0%
+}
+
+@keyframes barraaa{
+    to{
+        transform: translateX(var(--barraavance));
+    }
+}
 
 }
 
 @media screen and (max-width: 720px){
+
+    .tituloact{
+        float: none;
+        margin: 1px;
+    }
+
+    .progresousu{
+        top: 20px;
+    }
+
+    .progresousu p{
+        font-size: 12px;
+    }
+
+    .tituloact strong{
+        font-size: 15px;
+    }
 
     /*responsive del header*/
 
@@ -566,6 +665,75 @@ footer{
 
 .barraestafa2::after{
     --barraavance:50%
+}
+
+/*fácil*/
+
+.barraestafa3,
+.barraestafa3::after{
+    position: relative;
+    width: 170px;
+    height: 15px;
+    left: 100%;
+    bottom: 20px;
+    transform: translateX(-100%);
+    background-color: var(--blanco);
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.barraestafa3::after{
+    content: "";
+    position: absolute;
+
+    background-color: #49995a;
+    transition: var(--boton);
+    border-radius: 80px;
+    left: -170px;
+    top: 0px;
+    animation: barraaa 1s ease-in-out forwards;
+}
+
+.barraestafa4::after{
+    --barraavance:100%
+}
+
+/*difícil*/
+
+
+.barraestafa5,
+.barraestafa5::after{
+    position: relative;
+    width: 170px;
+    height: 15px;
+    left: 100%;
+    bottom: 20px;
+    transform: translateX(-100%);
+    background-color: var(--blanco);
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.barraestafa5::after{
+    content: "";
+    position: absolute;
+
+    background-color: #49995a;
+    transition: var(--boton);
+    border-radius: 80px;
+    left: -300px;
+    top: 0px;
+    animation: barraaa 1s ease-in-out forwards;
+}
+
+.barraestafa6::after{
+    --barraavance:0%
+}
+
+@keyframes barraaa{
+    to{
+        transform: translateX(var(--barraavance));
+    }
 }
 
 }
