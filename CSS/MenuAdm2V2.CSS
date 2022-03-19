@@ -239,7 +239,6 @@ body{
 }
 
 .btn-material {
-    margin-left: ;
     margin-right: 25px;
     text-decoration: none;
     -webkit-appearance: none;
@@ -477,8 +476,12 @@ footer{
         font-size: 18px;
     }
 
-    p{
-        font-size: 10px;
+    button{
+        font-size: 5px;
+    }
+
+    .dropdown .tipodif p{
+        font-size: 15px;
     }
 
     .titulo{
@@ -493,8 +496,13 @@ footer{
         height: 45%;
     }
 
+    .dificultades .dropdown{
+        display: block;
+    }
+
     .sec .contenido{
-        height: 90%;
+        margin-top: 80px;
+        height: 1000px;
         display: block;
     }
 
@@ -511,6 +519,11 @@ footer{
         height: 20px;
         font-size: 8px;
 
+    }
+
+    
+    footer{
+        top: 1100px;
     }
 
 }

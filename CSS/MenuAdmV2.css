@@ -183,7 +183,7 @@ body{
 }
   
 .accordion-body.active {
-    max-height: 20rem;
+    max-height: 22rem;
     padding: 1rem;
 }
 
@@ -200,6 +200,71 @@ body{
     width: 100px;
     float: left;
     margin: 50px;
+}
+
+/*botones*/
+
+.botones{
+    margin-top: 12px;
+    margin-left: 18px;
+}
+
+.botones p{
+    font-size: 20px
+}
+
+.btn-material {
+    margin-left: ;
+    margin-right: 25px;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #7F88C7;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: background-color 15ms linear,
+      box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    height: 50px;
+    line-height: 2.25rem;
+    font-family: Roboto, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+  
+.btn-material:hover, .btn-material:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0 4px 5px 0 rgba(0, 0, 0, 0.14),
+      0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #4E537A;
+}
+  
+.btn-material:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+      0 8px 10px 1px rgba(0, 0, 0, 0.14),
+      0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    background-color: #776c95;
+}
+
+/*scrollbar*/
+
+.accordion-body::-webkit-scrollbar{
+    width: 12px;
+    background-color: #efefef;
+    border-radius: 8px;
+}
+
+.accordion-body::-webkit-scrollbar-thumb{
+    background: #9faafa88;
+    border-radius: 8px;
 }
 
 /*barras*/
