@@ -183,7 +183,7 @@ body{
 }
   
 .accordion-body.active {
-    max-height: 22rem;
+    max-height: 80rem;
     padding: 1rem;
 }
 
@@ -214,7 +214,6 @@ body{
 }
 
 .btn-material {
-    margin-left: ;
     margin-right: 25px;
     text-decoration: none;
     -webkit-appearance: none;
@@ -256,13 +255,13 @@ body{
 
 /*scrollbar*/
 
-.accordion-body::-webkit-scrollbar{
+.accordion::-webkit-scrollbar{
     width: 12px;
     background-color: #efefef;
     border-radius: 8px;
 }
 
-.accordion-body::-webkit-scrollbar-thumb{
+.accordion::-webkit-scrollbar-thumb{
     background: #9faafa88;
     border-radius: 8px;
 }
